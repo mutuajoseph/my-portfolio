@@ -1,7 +1,82 @@
-body {
-    background-color: red;
+* {
+    /* property: value */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.hero--section {
-    background-color: green;
+/* tag-names, classnames, ids */
+
+body {
+ background-color: black;
+ color: white;
+}
+
+/* .navigation--container {
+
+} */
+
+/* #hero-section {
+
+} */
+
+
+/* generic css  */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.purple-color {
+    color: #5a189a;
+}
+
+.light-purple-color {
+    color: #e0aaff;
+}
+
+.graffiti--font {
+    font-family: 'Calligraffitti', cursive;
+}
+
+
+/* end of generic css */
+
+/* units - px, rem root em (1rem = 16px), pc (Picas) (1pc = 16px) 1rem = 1pc, percentage(%), viewportHeight(vh) & viewportWidth(vw) */
+
+.header-logo-container {
+   padding: 1rem;
+}
+
+.nav--items {
+    list-style: none;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+
+/* hero section styles */
+
+.hero--container {
+    flex-direction: column;
+}
+
+.hero--container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 80vh;
+    padding-left: 20rem;
+}
+
+.hero--container > div > h2 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.hero--container > div > h3 {
+    font-size: 1.5rem;
 }
